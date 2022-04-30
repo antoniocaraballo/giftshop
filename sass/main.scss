@@ -132,7 +132,10 @@ header {
 
 .mainImage {
   display: flex;
-  height: 700px; 
+  
+  img {
+    width: 700px;
+  }
 }
 
 // Statistics
@@ -396,7 +399,7 @@ footer {
   max-width: 1280px;
   margin: auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-around;
   border-bottom: 1px solid lightgray;
   padding-bottom: 20px;
@@ -468,12 +471,17 @@ footer {
     }
     a {
       font-size: 30px;
+      &:hover {
+        border-top: transparent;
+      }
     }
   }
 
   .closeNav {
     display: flex;
     justify-content: end;
+
+   
     
     img {
       width: 30px;
