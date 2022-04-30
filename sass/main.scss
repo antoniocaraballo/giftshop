@@ -1,0 +1,547 @@
+@use "./fonts";
+@use "./colors" as c;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sofia Pro Regular';
+  color: c.$lightBrown;
+  // outline: 1px red solid;
+}
+
+body {
+  max-width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+}
+
+// Navbar
+
+.navbar {
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.logo {
+  font-family: 'Zolina B';
+  font-size: 28px;
+  color: c.$brown;
+  span {
+    font-family: 'Zolina B';
+    color: c.$orange;
+  }
+}
+
+.nav {
+  ul { 
+    display: flex;
+    list-style: none;
+  }
+
+  li {
+    margin: 0px 25px;
+    
+  }
+
+  a {
+    
+    text-decoration: none;
+    padding-top: 35px;
+
+    &:hover {
+      cursor: pointer;
+      color: c.$orange;
+      border-top: c.$orange 5px solid;
+    }
+  }
+}
+
+// Close Nav 
+.closeNav {
+  display: none;
+}
+
+// Ham Navbar
+.hamNav {
+  display: none;
+}
+
+// Menu Active
+.active {
+  color: c.$orange;
+  border-top: c.$orange 5px solid;
+}
+
+.btn-nav {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid c.$orange;
+  border-radius: 8px;
+  color: c.$brown;
+}
+
+// Landing Page 
+
+.landingPage {
+  background: c.$creme;
+}
+
+.landingContent {
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info {
+  margin: 100px 0px;
+  
+  h1{
+    font-family: 'Zolina B';
+    font-size: 80px;
+    line-height: 1.5;
+    color: c.$brown;
+  }
+
+  p {
+    margin-bottom: 80px;
+  }
+  
+}
+
+// Info Button
+.btn-info {
+  text-decoration: none;
+  padding: 18px 30px;
+  background: c.$orange;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.mainImage {
+  display: flex;
+  height: 700px; 
+}
+
+// Statistics
+
+.statistics {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+  div {
+    margin: 50px 20px;
+  }
+  
+  h2 {
+    font-size: 32px;
+    color: c.$brown;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+// What we do
+
+.we-do {
+  background: c.$creme;
+}
+
+.we-do-content {
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitle {
+  font-family: 'Zolina M';
+  font-size: 24px;
+  color: c.$darkOrange;
+  margin-top: 80px;
+}
+
+.title {
+  font-size: 42px;
+  color: c.$brown;
+  text-align: center;
+
+  span {
+    color: c.$orange;
+  }
+}
+
+// Cards
+
+.we-do-cards {
+  margin: 40px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  line-height: 2;
+  min-width: 300px;
+  max-width: 300px;
+  font-size: 16px;
+  margin: 10px;
+
+  img {
+    width: 50px;
+  }
+
+  .card-title {
+    font-size: 18px;
+    color: c.$orange
+  }
+}
+
+// About US Section
+
+.about-us {
+  width: 90%;
+  max-width: 1280px;
+  margin: 80px auto;
+  background: c.$creme;
+  border-radius: 40px;
+  padding: 40px;
+  display: flex;
+}
+
+.about-us-image {
+ transform: scaleX(-1);
+}
+
+.about-us-info {
+  text-align: left;
+  font-size: 18px;
+
+  h2 {
+  text-align: left;
+  margin-bottom: 20px;
+ }
+}
+
+.text {
+  margin-bottom: 80px;
+}
+// About Us Button
+
+.btn-about-us {
+  color: c.$brown;
+  font-family: 'Sofia Pro Semibold';
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 8px;
+  border: 2px solid c.$orange;
+}
+
+// Testimonials Section
+
+.testimonials {
+  text-align: center;
+  width: 90%;
+  max-width: 1280px;
+  margin: 80px auto;
+}
+
+.reviews-cards {
+  margin-top: 60px;
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+}
+
+.reviewer {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+}
+
+.name {
+  background: c.$creme;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h3 {
+    font-size: 24px;
+    color: c.$brown;
+    line-height: 1.5;
+    margin-bottom: 5px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    
+  }
+}
+
+.stars {
+  display: flex;
+
+  img {
+    margin: 0px 2px;
+    width: 20px;
+  }
+}
+
+.review {
+  margin-left: 10px;
+  img {
+    width: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+// Contact Us
+
+.contact-us {
+  width: 90%;
+  max-width: 1280px;
+  margin: 80px auto;
+  background: c.$creme;
+  border-radius: 40px;
+  padding: 40px;
+  display: flex;
+  flex-direction:row-reverse
+}
+
+.contact-us-image {
+ transform: scaleX(-1);
+}
+
+.contact-us-info {
+  text-align: left;
+  font-size: 18px;
+
+  h2 {
+  text-align: left;
+  margin-bottom: 20px;
+ }
+}
+
+.contact-form {
+  height: 60px;
+  display: flex;
+  input {
+    height: 100%;
+    width: 80%;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 18px;
+    padding: 10px;
+
+    &::placeholder {
+      color: lightgray;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .contact-btn {
+    height: 100%;
+    padding: 20px;
+    background: c.$orange;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 0px 10px 10px 0px;
+  
+  }
+}
+
+// Footer
+
+footer {
+  width: 100%;
+  background: c.$brown;
+  padding: 60px 0px;
+
+}
+
+.footer {
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 20px;
+}
+
+.footer-links {
+  width: 100%;
+
+  h2 {
+    color: #ffffff;
+  }
+
+  p {
+    max-width: fit-content;
+  }
+  img {
+    width: 25px;
+    margin:  0px 10px;
+    filter: invert(1);
+  }
+  ul {
+    list-style: none;
+  }
+  li {
+    margin: 10px 0px;
+  }
+  a {
+    text-decoration: none;
+    font-size: 18px;
+    
+  }
+}
+
+.copy {
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+// Tablet View
+
+@media only screen and (max-width: 1024px){
+
+  body {
+    overflow-x: hidden;
+  }
+  
+  // Navbar
+
+  .navbar {
+    padding: 0px 40px;
+  }
+
+  .nav {
+    // display: none;
+    position: fixed;
+    height: 100vh;
+    width: 80%;
+    background: c.$creme;
+    top: 0;
+    right: -80%;
+    transition: right ease 0.5s;
+    ul {
+      flex-direction: column;
+      text-align: right;
+    }
+    li {
+      margin: 30px;
+    }
+    a {
+      font-size: 30px;
+    }
+  }
+
+  .closeNav {
+    display: flex;
+    justify-content: end;
+    
+    img {
+      width: 30px;
+    }
+  }
+
+  .signUp {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamNav {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+
+    .line {
+      background: c.$brown;
+      height: 6px;
+      width: 30px;
+      border-radius: 2px;
+      margin: 1px 0px;
+    }
+  }
+
+  .active {
+    border-top: none;
+  }
+
+
+  .mainImage {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 850px) {
+
+  .info {
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  .about-us-image {
+    display: none;
+  }
+
+  .contact-us-image {
+    display: none;
+  }
+
+  .reviews-cards {
+    flex-direction: column;
+    align-items: center;
+    .reviewer {
+      margin: 20px;
+    }
+  }
+
+  .footer {
+    max-width: 80%;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+
+    img {
+      margin-bottom: 40px;
+    }
+  }
+}

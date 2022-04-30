@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Gift Shop</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Navbar -->
+    <div class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <span>Gift</span>Shop
+      </div>
+      <!-- Menu -->
+      <nav class="nav">
+        <ul>
+          <li><a href="#" class="closeNav" onclick="closeNav()"><img src="./icons/x.png" alt=""></a></li>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </nav>
+      <!-- Sign up -->
+      <div class="signUp">
+        <a href="#" class="btn-nav">Sign up</a>
+        <div class="hamNav" onclick="openNav()">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Landing Page Section -->
+  <section class="landingPage">
+    <div class="landingContent">
+      <!-- Info -->
+      <div class="info">
+        <h1>Wishing you <br>a happy <br> Ramadan</h1>
+        <p>May This Holy Month Bring Peace All Over The World</p>
+        <a href="#" class="btn-info">Explore All Gift Items</a>
+      </div>
+      <!-- Image -->
+      <div class="mainImage">
+        <img src="./imgs/giftbox.webp" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- Statistics -->
+  <section class="statistics">
+    <div>
+      <h2>50M+</h2>
+      <p>Products Sold</p>
+    </div>
+    <div>
+      <h2>12k+</h2>
+      <p>Regular Customer</p>
+    </div>
+    <div>
+      <h2>100k+</h2>
+      <p>Happy Customer</p>
+    </div>
+    <div>
+      <h2>20+</h2>
+      <p>Years of Expirience</p>
+    </div>
+  </section>
+  <!-- What we do -->
+  <section class="we-do">
+    <div class="we-do-content">
+      <p class="subtitle">What we do</p>
+      <h2 class="title">We Don't Just Send Gifts. <br>
+      We Deliver <span>Happiness</span></h2>
+      <div class="we-do-cards">
+        <div class="card">
+          <img src="./icons/ring.png" alt="">
+          <p class="card-title">Wedding Gift's</p>
+          <p>Don't forget to send a lovely gift to your lovely bride.</p>
+        </div>
+        <div class="card">
+          <img src="./icons/surprise.png" alt="">
+          <p class="card-title">Surprise Gift's</p>
+          <p>Don't forget to send a Surprise gift to your special person.</p>
+        </div>
+        <div class="card">
+          <img src="./icons/wine.png" alt="">
+          <p class="card-title">Anniversary Gift's</p>
+          <p>Don't forget to send a lovely gift to your lovely Wife</p>
+        </div>
+        <div class="card">
+          <img src="./icons/mail.png" alt="">
+          <p class="card-title">Eid Special Gift's</p>
+          <p>Don't forget to send a Eid special gift to your relatives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About US -->
+  <section class="about-us">
+    <div class="about-us-image">
+      <img src="./imgs/bus.webp" alt="">
+    </div>
+    <div class="about-us-info">
+      <p class="subtitle">About US</p>
+      <h2 class="title">What Makes Us <span>Different?</span></h2>
+      <p class="text">With our low-cost delivery service, we will carefully deliver your parcel within 24 hours to your desired destination.</p>
+      <a href="#" class="btn-about-us">About US</a>
+    </div>
+  </section>
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <p class="subtitle">Testimonial</p>
+    <h2 class="title">What Our Client <span>Say!</span></h2>
+    <div class="reviews-cards">
+      <div class="reviewer">
+        <div class="name">
+          <h3>Andrew <br>Rathore</h3>
+          <p>Web Designer</p>
+          <div class="stars">
+            <img src="./icons/star.png" alt="">
+            <img src="./icons/star.png" alt="">
+            <img src="./icons/star.png" alt="">
+            <img src="./icons/star.png" alt="">
+            <img src="./icons/star.png" alt="">
+          </div>
+        </div>
+        <div class="review">
+          <img src="./imgs/person1.webp" alt="">
+          <p>Thanks to their service, I was able to surprise my special someone. A wide variety of interesting items and fast delivery made this possible.</p>
+        </div>
+      </div>
+      <div class="reviewer">
+        <div class="name">
+          <h3>Esther <br>Howard</h3>
+          <p>Starbucks</p>
+          <div class="stars">
+            <img src="./icons/star.png" alt="">
+            <img src="./icons/star.png" alt="">
+            <img src="./icons/star.png" alt="">
+            <img src="./icons/star.png" alt="">
+            <img src="./icons/star.png" alt="">
+          </div>
+        </div>
+        <div class="review">
+          <img src="./imgs/person2.png" alt="">
+          <p>Thanks to their service, I was able to surprise my special someone. A wide variety of interesting items and fast delivery made this possible.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Us -->
+  <section class="contact-us">
+    <div class="contact-us-image">
+      <img src="./imgs/giftbox.webp" alt="">
+    </div>
+    <div class="contact-us-info">
+      <p class="subtitle">Contact Us</p>
+      <h2 class="title">Subscribe to Our <span>Newsletter</span></h2>
+      <p class="text">Subscribe to our newsletter and always up to date about new products and promos.</p>
+      <form action="" class="contact-form">
+        <input type="email" placeholder="Enter your email">
+        <a href="#" class="contact-btn">Subscribe</a>
+      </form>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <div class="footer-links">
+        <h2 class="logo"><span>Gift</span>Shop</h2>
+        <p class="text">You can follow via streaming and also on the special hearing website, which will be updated with timely and detailed information.</p>
+        <img src="./icons/instagram.png" alt="">
+        <img src="./icons/twitter.png" alt="">
+      </div>
+      <div class="footer-links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h2>Company</h2>
+        <ul>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">On Sale</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h2>Information</h2>
+        <ul>
+          <li><a href="#">Terms & Condition</a></li>
+          <li><a href="#">Privacy & Policy</a></li>
+          <li><a href="#">support@giftshop.com</a></li>
+          <li><a href="#">+123-456-7890</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <p class="copy">&copy; Copyright 2022. All Right Reserved</p>
+  </footer>
+  <!-- JS Script -->
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,596 @@
+@font-face {
+  font-family: "Zolina M";
+  src: url(../fonts/Zolina-Medium.ttf);
+}
+@font-face {
+  font-family: "Zolina B";
+  src: url(../fonts/Zolina-Bold.ttf);
+}
+@font-face {
+  font-family: "Sofia Pro Regular";
+  src: url(../fonts/Sofia\ Pro\ Regular\ Az.otf);
+}
+@font-face {
+  font-family: "Sofia Pro Semibold";
+  src: url(../fonts/Sofia\ Pro\ Semi\ Bold\ Az.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Sofia Pro Regular";
+  color: #736757;
+}
+
+body {
+  max-width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+}
+
+.navbar {
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.logo {
+  font-family: "Zolina B";
+  font-size: 28px;
+  color: #463219;
+}
+.logo span {
+  font-family: "Zolina B";
+  color: #d89e30;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+.nav li {
+  margin: 0px 25px;
+}
+.nav a {
+  text-decoration: none;
+  padding-top: 35px;
+}
+.nav a:hover {
+  cursor: pointer;
+  color: #d89e30;
+  border-top: #d89e30 5px solid;
+}
+
+.closeNav {
+  display: none;
+}
+
+.hamNav {
+  display: none;
+}
+
+.active {
+  color: #d89e30;
+  border-top: #d89e30 5px solid;
+}
+
+.btn-nav {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #d89e30;
+  border-radius: 8px;
+  color: #463219;
+}
+
+.landingPage {
+  background: #ffebd1;
+}
+
+.landingContent {
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info {
+  margin: 100px 0px;
+}
+.info h1 {
+  font-family: "Zolina B";
+  font-size: 80px;
+  line-height: 1.5;
+  color: #463219;
+}
+.info p {
+  margin-bottom: 80px;
+}
+
+.btn-info {
+  text-decoration: none;
+  padding: 18px 30px;
+  background: #d89e30;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.mainImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 700px;
+}
+
+.statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.statistics div {
+  margin: 50px 20px;
+}
+.statistics h2 {
+  font-size: 32px;
+  color: #463219;
+}
+.statistics p {
+  font-size: 18px;
+}
+
+.we-do {
+  background: #ffebd1;
+}
+
+.we-do-content {
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subtitle {
+  font-family: "Zolina M";
+  font-size: 24px;
+  color: #a67926;
+  margin-top: 80px;
+}
+
+.title {
+  font-size: 42px;
+  color: #463219;
+  text-align: center;
+}
+.title span {
+  color: #d89e30;
+}
+
+.we-do-cards {
+  margin: 40px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  line-height: 2;
+  min-width: 300px;
+  max-width: 300px;
+  font-size: 16px;
+  margin: 10px;
+}
+.card img {
+  width: 50px;
+}
+.card .card-title {
+  font-size: 18px;
+  color: #d89e30;
+}
+
+.about-us {
+  width: 90%;
+  max-width: 1280px;
+  margin: 80px auto;
+  background: #ffebd1;
+  border-radius: 40px;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-us-image {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.about-us-info {
+  text-align: left;
+  font-size: 18px;
+}
+.about-us-info h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.text {
+  margin-bottom: 80px;
+}
+
+.btn-about-us {
+  color: #463219;
+  font-family: "Sofia Pro Semibold";
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 8px;
+  border: 2px solid #d89e30;
+}
+
+.testimonials {
+  text-align: center;
+  width: 90%;
+  max-width: 1280px;
+  margin: 80px auto;
+}
+
+.reviews-cards {
+  margin-top: 60px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.reviewer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+}
+
+.name {
+  background: #ffebd1;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.name h3 {
+  font-size: 24px;
+  color: #463219;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+.name p {
+  margin-bottom: 20px;
+}
+
+.stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.stars img {
+  margin: 0px 2px;
+  width: 20px;
+}
+
+.review {
+  margin-left: 10px;
+}
+.review img {
+  width: 100px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-us {
+  width: 90%;
+  max-width: 1280px;
+  margin: 80px auto;
+  background: #ffebd1;
+  border-radius: 40px;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.contact-us-image {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.contact-us-info {
+  text-align: left;
+  font-size: 18px;
+}
+.contact-us-info h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact-form input {
+  height: 100%;
+  width: 80%;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+  font-size: 18px;
+  padding: 10px;
+}
+.contact-form input::-webkit-input-placeholder {
+  color: lightgray;
+}
+.contact-form input::-moz-placeholder {
+  color: lightgray;
+}
+.contact-form input:-ms-input-placeholder {
+  color: lightgray;
+}
+.contact-form input::-ms-input-placeholder {
+  color: lightgray;
+}
+.contact-form input::placeholder {
+  color: lightgray;
+}
+.contact-form input:focus {
+  outline: none;
+}
+.contact-form .contact-btn {
+  height: 100%;
+  padding: 20px;
+  background: #d89e30;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 0px 10px 10px 0px;
+}
+
+footer {
+  width: 100%;
+  background: #463219;
+  padding: 60px 0px;
+}
+
+.footer {
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 20px;
+}
+
+.footer-links {
+  width: 100%;
+}
+.footer-links h2 {
+  color: #ffffff;
+}
+.footer-links p {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.footer-links img {
+  width: 25px;
+  margin: 0px 10px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+.footer-links ul {
+  list-style: none;
+}
+.footer-links li {
+  margin: 10px 0px;
+}
+.footer-links a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    padding: 0px 40px;
+  }
+
+  .nav {
+    position: fixed;
+    height: 100vh;
+    width: 80%;
+    background: #ffebd1;
+    top: 0;
+    right: -80%;
+    -webkit-transition: right ease 0.5s;
+    transition: right ease 0.5s;
+  }
+  .nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: right;
+  }
+  .nav li {
+    margin: 30px;
+  }
+  .nav a {
+    font-size: 30px;
+  }
+
+  .closeNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .closeNav img {
+    width: 30px;
+  }
+
+  .signUp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .hamNav {
+    margin-left: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hamNav .line {
+    background: #463219;
+    height: 6px;
+    width: 30px;
+    border-radius: 2px;
+    margin: 1px 0px;
+  }
+
+  .active {
+    border-top: none;
+  }
+
+  .mainImage {
+    display: none;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .info h1 {
+    font-size: 50px;
+  }
+
+  .about-us-image {
+    display: none;
+  }
+
+  .contact-us-image {
+    display: none;
+  }
+
+  .reviews-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reviews-cards .reviewer {
+    margin: 20px;
+  }
+
+  .footer {
+    max-width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+  }
+  .footer img {
+    margin-bottom: 40px;
+  }
+}
